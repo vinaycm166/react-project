@@ -1,0 +1,149 @@
+[
+  {
+    "id": "PR-2026-001",
+    "title": "MacBook Pro laptops for Engineering Team",
+    "amount": 25000,
+    "department": "Engineering",
+    "status": "Pending",
+    "riskRating": "Low",
+    "vendorId": "VND001",
+    "vendorName": "Apex Global Systems",
+    "submittedBy": "John Doe",
+    "submissionDate": "2026-07-01",
+    "description": "Purchase of 10 developer-configured MacBook Pro laptops for incoming engineering hires.",
+    "attachments": ["MacBook_Specs.pdf", "Apex_Quote_25k.pdf"],
+    "approvalHistory": [
+      { "step": "Initial Submission", "user": "John Doe", "status": "Submitted", "date": "2026-07-01", "comments": "Urgent requirement for Q3 cohort." }
+    ],
+    "comments": [
+      { "user": "John Doe", "comment": "Need these shipped by July 15th to align with onboarding.", "date": "2026-07-01 10:45:00" }
+    ],
+    "auditLogs": [
+      { "action": "Request Created", "user": "John Doe", "date": "2026-07-01 10:42:00" },
+      { "action": "Assigned to Procurement Manager Queue", "user": "System", "date": "2026-07-01 10:42:05" }
+    ]
+  },
+  {
+    "id": "PR-2026-002",
+    "title": "Cloud Server Infrastructure Migration Support",
+    "amount": 48000,
+    "department": "IT Operations",
+    "status": "Approved",
+    "riskRating": "Medium",
+    "vendorId": "VND002",
+    "vendorName": "Vertex Cloud Solutions",
+    "submittedBy": "Admin User",
+    "submissionDate": "2026-06-25",
+    "description": "Professional services contract for migrating legacy databases to AWS secure storage.",
+    "attachments": ["Migration_Scope_of_Work.pdf", "Vertex_Security_Assessment.pdf"],
+    "approvalHistory": [
+      { "step": "Initial Submission", "user": "Admin User", "status": "Submitted", "date": "2026-06-25", "comments": "Mandatory security migration." },
+      { "step": "Compliance Review", "user": "Marcus Vance", "status": "Approved", "date": "2026-06-26", "comments": "SOC 2 Type II reviewed and validated. Data handling compliance approved." },
+      { "step": "Manager Approval", "user": "Sarah Jenkins", "status": "Approved", "date": "2026-06-27", "comments": "Approved. Budget allocated from IT Ops capital expenditure." }
+    ],
+    "comments": [
+      { "user": "Marcus Vance", "comment": "Ensure all database backups are encrypted prior to vendor transfer.", "date": "2026-06-26 14:20:00" },
+      { "user": "Sarah Jenkins", "comment": "Approved following compliance sign-off.", "date": "2026-06-27 09:12:00" }
+    ],
+    "auditLogs": [
+      { "action": "Request Created", "user": "Admin User", "date": "2026-06-25 09:00:00" },
+      { "action": "Compliance Verification Successful", "user": "Marcus Vance", "date": "2026-06-26 14:19:00" },
+      { "action": "Request Approved by Sarah Jenkins", "user": "Sarah Jenkins", "date": "2026-06-27 09:12:00" }
+    ]
+  },
+  {
+    "id": "PR-2026-003",
+    "title": "Ergonomic Office Chairs (Floor 3 Upgrade)",
+    "amount": 12500,
+    "department": "Facilities",
+    "status": "Rejected",
+    "riskRating": "Low",
+    "vendorId": "VND003",
+    "vendorName": "ErgoForm Furniture",
+    "submittedBy": "John Doe",
+    "submissionDate": "2026-06-18",
+    "description": "Purchase of 25 ergonomic chairs for HR and Admin departments.",
+    "attachments": ["ErgoForm_Catalog_Quote.pdf"],
+    "approvalHistory": [
+      { "step": "Initial Submission", "user": "John Doe", "status": "Submitted", "date": "2026-06-18", "comments": "Replacement of damaged chairs." },
+      { "step": "Manager Review", "user": "Sarah Jenkins", "status": "Rejected", "date": "2026-06-20", "comments": "Rejected. Please resubmit using our primary vendor catalog or provide alternative bids as per procurement policy." }
+    ],
+    "comments": [
+      { "user": "Sarah Jenkins", "comment": "We have an active partnership with HermanMiller reseller. Bids from ErgoForm must go through standard tender if above 10k.", "date": "2026-06-20 16:30:00" }
+    ],
+    "auditLogs": [
+      { "action": "Request Created", "user": "John Doe", "date": "2026-06-18 11:30:00" },
+      { "action": "Request Rejected by Sarah Jenkins", "user": "Sarah Jenkins", "date": "2026-06-20 16:30:00" }
+    ]
+  },
+  {
+    "id": "PR-2026-004",
+    "title": "Annual Threat Intelligence License Renewal",
+    "amount": 95000,
+    "department": "Security Operations",
+    "status": "Escalated",
+    "riskRating": "High",
+    "vendorId": "VND004",
+    "vendorName": "Synergy Cybertech",
+    "submittedBy": "Admin User",
+    "submissionDate": "2026-06-28",
+    "description": "Renewal of premium threat feeds and external attack surface monitoring subscription.",
+    "attachments": ["License_Renewal_Quote.pdf"],
+    "approvalHistory": [
+      { "step": "Initial Submission", "user": "Admin User", "status": "Submitted", "date": "2026-06-28", "comments": "Renewal critical for network boundary monitoring." },
+      { "step": "Compliance Review", "user": "Marcus Vance", "status": "Escalated", "date": "2026-06-29", "comments": "Escalated. Vendor's ISO 27001 certificate has expired. Risk rating high. Needs compliance override or board-level risk sign-off." }
+    ],
+    "comments": [
+      { "user": "Marcus Vance", "comment": "Cannot approve in normal workflow. Synergy Cybertech needs to provide evidence of active certification audits or we need an executive risk waiver.", "date": "2026-06-29 11:00:00" }
+    ],
+    "auditLogs": [
+      { "action": "Request Created", "user": "Admin User", "date": "2026-06-28 15:45:00" },
+      { "action": "Escalated to Compliance Director", "user": "Marcus Vance", "date": "2026-06-29 11:00:00" }
+    ]
+  },
+  {
+    "id": "PR-2026-005",
+    "title": "Enterprise Wide SEO and Marketing Campaign",
+    "amount": 35000,
+    "department": "Marketing",
+    "status": "Pending",
+    "riskRating": "Low",
+    "vendorId": "VND001",
+    "vendorName": "Apex Global Systems",
+    "submittedBy": "John Doe",
+    "submissionDate": "2026-07-03",
+    "description": "SEO services and digital marketing campaign setup for the launch of our new SaaS module.",
+    "attachments": ["SEO_Campaign_Proposal.pdf"],
+    "approvalHistory": [
+      { "step": "Initial Submission", "user": "John Doe", "status": "Submitted", "date": "2026-07-03", "comments": "Q3 Marketing budget allocated." }
+    ],
+    "comments": [],
+    "auditLogs": [
+      { "action": "Request Created", "user": "John Doe", "date": "2026-07-03 14:00:00" }
+    ]
+  },
+  {
+    "id": "PR-2026-006",
+    "title": "Corporate HQ Structural Legal Representation",
+    "amount": 150000,
+    "department": "Legal Affairs",
+    "status": "Pending",
+    "riskRating": "Critical",
+    "vendorId": "VND005",
+    "vendorName": "Legacy Legal Associates",
+    "submittedBy": "Admin User",
+    "submissionDate": "2026-07-04",
+    "description": "Retention fee for structural dispute litigation defense representation.",
+    "attachments": ["Retainer_Agreement.pdf"],
+    "approvalHistory": [
+      { "step": "Initial Submission", "user": "Admin User", "status": "Submitted", "date": "2026-07-04", "comments": "Required for ongoing class litigation." }
+    ],
+    "comments": [
+      { "user": "System", "comment": "Warning: Associated Vendor (Legacy Legal Associates) is currently marked SUSPENDED.", "date": "2026-07-04 10:05:00" }
+    ],
+    "auditLogs": [
+      { "action": "Request Created", "user": "Admin User", "date": "2026-07-04 10:00:00" },
+      { "action": "Suspended Vendor Flagged", "user": "System", "date": "2026-07-04 10:05:00" }
+    ]
+  }
+]

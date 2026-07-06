@@ -1,0 +1,47 @@
+[
+  {
+    "id": "USR001",
+    "username": "employee",
+    "password": "password",
+    "name": "John Doe",
+    "role": "Employee",
+    "department": "Engineering",
+    "email": "john.doe@enterprise.com"
+  },
+  {
+    "id": "USR002",
+    "username": "manager",
+    "password": "password",
+    "name": "Sarah Jenkins",
+    "role": "Procurement Manager",
+    "department": "Procurement",
+    "email": "sarah.jenkins@enterprise.com"
+  },
+  {
+    "id": "USR003",
+    "username": "compliance",
+    "password": "password",
+    "name": "Marcus Vance",
+    "role": "Compliance Officer",
+    "department": "Compliance & Legal",
+    "email": "marcus.vance@enterprise.com"
+  },
+  {
+    "id": "USR004",
+    "username": "auditor",
+    "password": "password",
+    "name": "Elena Rostova",
+    "role": "Auditor",
+    "department": "Internal Audit",
+    "email": "elena.rostova@enterprise.com"
+  },
+  {
+    "id": "USR005",
+    "username": "admin",
+    "password": "password",
+    "name": "Admin User",
+    "role": "Administrator",
+    "department": "IT Operations",
+    "email": "admin@enterprise.com"
+  }
+]

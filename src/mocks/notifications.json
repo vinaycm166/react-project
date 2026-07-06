@@ -1,0 +1,47 @@
+[
+  {
+    "id": "NOT-001",
+    "title": "New Procurement Request Submitted",
+    "message": "John Doe submitted PR-2026-001: MacBook Pro laptops for Engineering Team. Review pending.",
+    "priority": "Medium",
+    "status": "Unread",
+    "createdAt": "2026-07-01 10:42:00",
+    "roleScope": "Procurement Manager"
+  },
+  {
+    "id": "NOT-002",
+    "title": "Vendor Compliance Expired",
+    "message": "Vendor Synergy Cybertech (VND004) has expired certifications (ISO 27001). Immediate review is required.",
+    "priority": "High",
+    "status": "Unread",
+    "createdAt": "2026-06-29 11:00:00",
+    "roleScope": "Compliance Officer"
+  },
+  {
+    "id": "NOT-003",
+    "title": "Request Approved",
+    "message": "PR-2026-002: Cloud Server Infrastructure Migration Support has been approved by Sarah Jenkins.",
+    "priority": "Low",
+    "status": "Read",
+    "createdAt": "2026-06-27 09:12:00",
+    "roleScope": "Employee"
+  },
+  {
+    "id": "NOT-004",
+    "title": "Critical Risk Warning Flagged",
+    "message": "PR-2026-006 uses suspended vendor Legacy Legal Associates. Procurement blocked until review.",
+    "priority": "High",
+    "status": "Unread",
+    "createdAt": "2026-07-04 10:05:00",
+    "roleScope": "Compliance Officer"
+  },
+  {
+    "id": "NOT-005",
+    "title": "Procurement Request Rejected",
+    "message": "PR-2026-003: Ergonomic Office Chairs was rejected by Sarah Jenkins.",
+    "priority": "Medium",
+    "status": "Unread",
+    "createdAt": "2026-06-20 16:30:00",
+    "roleScope": "Employee"
+  }
+]

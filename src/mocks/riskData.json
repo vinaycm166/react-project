@@ -1,0 +1,44 @@
+{
+  "matrix": [
+    { "likelihood": 1, "impact": 1, "count": 2, "level": "Low", "requests": [] },
+    { "likelihood": 1, "impact": 2, "count": 4, "level": "Low", "requests": [] },
+    { "likelihood": 1, "impact": 3, "count": 3, "level": "Medium", "requests": [] },
+    { "likelihood": 1, "impact": 4, "count": 1, "level": "Medium", "requests": [] },
+    { "likelihood": 1, "impact": 5, "count": 0, "level": "High", "requests": [] },
+    { "likelihood": 2, "impact": 1, "count": 5, "level": "Low", "requests": [] },
+    { "likelihood": 2, "impact": 2, "count": 8, "level": "Low", "requests": [] },
+    { "likelihood": 2, "impact": 3, "count": 6, "level": "Medium", "requests": [] },
+    { "likelihood": 2, "impact": 4, "count": 2, "level": "High", "requests": [] },
+    { "likelihood": 2, "impact": 5, "count": 0, "level": "High", "requests": [] },
+    { "likelihood": 3, "impact": 1, "count": 1, "level": "Low", "requests": [] },
+    { "likelihood": 3, "impact": 2, "count": 7, "level": "Medium", "requests": [] },
+    { "likelihood": 3, "impact": 3, "count": 4, "level": "Medium", "requests": ["PR-2026-002"] },
+    { "likelihood": 3, "impact": 4, "count": 3, "level": "High", "requests": [] },
+    { "likelihood": 3, "impact": 5, "count": 1, "level": "Critical", "requests": [] },
+    { "likelihood": 4, "impact": 1, "count": 0, "level": "Medium", "requests": [] },
+    { "likelihood": 4, "impact": 2, "count": 3, "level": "Medium", "requests": [] },
+    { "likelihood": 4, "impact": 3, "count": 2, "level": "High", "requests": [] },
+    { "likelihood": 4, "impact": 4, "count": 1, "level": "High", "requests": ["PR-2026-004"] },
+    { "likelihood": 4, "impact": 5, "count": 0, "level": "Critical", "requests": [] },
+    { "likelihood": 5, "impact": 1, "count": 0, "level": "Medium", "requests": [] },
+    { "likelihood": 5, "impact": 2, "count": 1, "level": "High", "requests": [] },
+    { "likelihood": 5, "impact": 3, "count": 0, "level": "High", "requests": [] },
+    { "likelihood": 5, "impact": 4, "count": 1, "level": "Critical", "requests": ["PR-2026-006"] },
+    { "likelihood": 5, "impact": 5, "count": 1, "level": "Critical", "requests": [] }
+  ],
+  "categories": [
+    { "name": "Information Security", "value": 45, "color": "#1a73e8" },
+    { "name": "Financial Stability", "value": 25, "color": "#d93025" },
+    { "name": "Regulatory Compliance", "value": 20, "color": "#f9ab00" },
+    { "name": "Operational Risk", "value": 10, "color": "#188038" }
+  ],
+  "trends": [
+    { "month": "Jan", "identified": 4, "resolved": 3, "open": 8 },
+    { "month": "Feb", "identified": 6, "resolved": 5, "open": 9 },
+    { "month": "Mar", "identified": 8, "resolved": 4, "open": 13 },
+    { "month": "Apr", "identified": 3, "resolved": 6, "open": 10 },
+    { "month": "May", "identified": 7, "resolved": 5, "open": 12 },
+    { "month": "Jun", "identified": 11, "resolved": 8, "open": 15 },
+    { "month": "Jul", "identified": 5, "resolved": 2, "open": 18 }
+  ]
+}

@@ -1,0 +1,38 @@
+[
+  {
+    "id": "REP001",
+    "name": "Q2 Procurement Spend by Department",
+    "category": "Procurement",
+    "createdAt": "2026-06-30",
+    "createdBy": "Sarah Jenkins",
+    "format": "CSV/Excel",
+    "filters": { "dateRange": "2026-04-01 to 2026-06-30", "status": "Approved" }
+  },
+  {
+    "id": "REP002",
+    "name": "Active Vendors Compliance Certification Status",
+    "category": "Compliance",
+    "createdAt": "2026-07-02",
+    "createdBy": "Marcus Vance",
+    "format": "PDF/CSV",
+    "filters": { "vendorStatus": "Active", "violationsOnly": false }
+  },
+  {
+    "id": "REP003",
+    "name": "Critical Risk Exposure Summary Map",
+    "category": "Risk",
+    "createdAt": "2026-07-04",
+    "createdBy": "Elena Rostova",
+    "format": "Excel",
+    "filters": { "minRiskRating": "High" }
+  },
+  {
+    "id": "REP004",
+    "name": "Regulatory Audit and Compliance Sign-offs",
+    "category": "Compliance",
+    "createdAt": "2026-06-15",
+    "createdBy": "Elena Rostova",
+    "format": "CSV",
+    "filters": { "complianceState": "All" }
+  }
+]
