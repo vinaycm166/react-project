@@ -128,3 +128,80 @@ Use the following user credentials to test different system privileges in the lo
 | `compliance` | `password` | Compliance Officer | Compliance & Legal |
 | `auditor` | `password` | Auditor | Internal Audit |
 | `admin` | `password` | Administrator | IT Operations |
+
+---
+
+## 6. System Architecture & Flow Diagrams
+
+These diagrams are written in Mermaid notation and will render natively on GitHub.
+
+### Overall System Architecture
+Describes the structural layout of the application frontend modules and mock database layers:
+
+```mermaid
+graph TD
+    A[Browser / Client UI] --> B[AppLayout / Routing Shell]
+    B --> C[React Router DOM Navigation]
+    C --> D[Redux Toolkit Store]
+    D --> E[Service Endpoint API Layer]
+    E --> F[Axios Client Instance]
+    F --> G[Mock Database & safeResolve Adapter]
+```
+
+### Redux Async Data Flow
+Describes the cycle of user action triggering, async dispatching, mock request resolution, state mutations, and view updates:
+
+```mermaid
+sequenceDiagram
+    participant UI as Component View (UI)
+    participant Store as Redux Store
+    participant Thunk as Async Thunk
+    participant API as Axios Client (apiClient)
+    participant DB as Mock DB Adapter
+
+    UI->>Store: dispatch(fetchRequests())
+    Store->>Thunk: Executes Thunk handler
+    Thunk->>API: apiClient.get("/procurement")
+    API->>DB: Intercepts call and processes query
+    DB-->>API: Resolve with deep-copied mock requests
+    API-->>Thunk: Return Axios Response
+    Thunk-->>Store: Dispatch fulfilled action with payload
+    Store->>Store: Reducer updates state
+    Store-->>UI: Selected state changes (forces re-render)
+```
+
+### React Router & Guarding Flow
+Describes how user sessions are checked and navigated inside AppLayout:
+
+```mermaid
+graph TD
+    A[App Route Request] --> B{Requires Session?}
+    B -- No --> C{Is Login / Signup?}
+    C -- Yes --> D[GuestGuard: redirects logged-in user to /dashboard]
+    C -- No --> E[Renders Guest Form]
+    B -- Yes --> F[AuthGuard: redirects guest user to /login]
+    F -- Authenticated --> G{Role Restricted?}
+    G -- Yes --> H[RoleGuard: checks user.role credentials]
+    H -- Unauthorized --> I[Renders Access Denied Screen]
+    H -- Authorized --> J[Renders page inside AppLayout Outlet]
+```
+
+### Component Hierarchy Diagram
+Describes the DOM tree structure of parent and child components inside the layout shell:
+
+```mermaid
+graph TD
+    App[App.jsx] --> Provider[Redux Provider store]
+    Provider --> Theme[ThemeProvider]
+    Theme --> Router[BrowserRouter]
+    Router --> Guards[RouteGuards: Auth / Guest / Role]
+    Guards --> MainLayout[AppLayout.jsx]
+    MainLayout --> Header[AppBar Toolbar: Theme Switch, Avatar User Menu]
+    MainLayout --> Sidebar[Persistent Drawer: List directory links]
+    MainLayout --> ContentArea[Main Container Outlet]
+    ContentArea --> Dash[Dashboard View: StatCard KPI Grid, TableContainer]
+    ContentArea --> Proc[ProcurementList View: Dialog, DataTable, SearchBar]
+    ContentArea --> Vend[VendorDetail View: Tabs, Dialog Upload, Activity Timeline]
+    ContentArea --> Risk[RiskCenter View: Heat Map Matrix Grid]
+```
+
